@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="hw3_1_maui.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label
+                Text="Введення цілого числа"
+                FontSize="24"
+                TextColor="{StaticResource Primary}"
+                HorizontalOptions="Center" />
+            <Entry
+                x:Name="NumberEntry"
+                Placeholder="Введіть ціле число тут"
+                Keyboard="Numeric"
+                MaxLength="10"
+                HorizontalOptions="FillAndExpand"
+                FontSize="18"
+                Margin="0, 10, 0, 10"
+                BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray500}}"/>
+            <Button
+                Text="Показати число"
+                Clicked="OnButtonClicked"
+                HorizontalOptions="FillAndExpand"
+                FontSize="18"
+                Margin="0, 10, 0, 0"
+                CornerRadius="8"
+                BackgroundColor="{StaticResource Primary}"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
